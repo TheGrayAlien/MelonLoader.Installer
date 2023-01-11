@@ -1,0 +1,80 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="MelonLoader.Installer.Next.Views.SettingsView">
+    <Viewbox Margin="20">
+            <Grid RowDefinitions="*,*,*">
+                <StackPanel Grid.Row="0" Orientation="Horizontal" 
+                            VerticalAlignment="Center" 
+                            HorizontalAlignment="Center">
+                
+                    <TextBlock VerticalAlignment="Center" Text="Theme:"></TextBlock>
+                
+                    <ComboBox VerticalAlignment="Center" 
+                              SelectionChanged="ThemeBoxChanged">
+                        <ComboBoxItem Content="Dark"></ComboBoxItem>
+                        <ComboBoxItem Content="Light"></ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+                
+                <StackPanel Grid.Row="1" Orientation="Horizontal" 
+                            VerticalAlignment="Center" 
+                            HorizontalAlignment="Center">
+                    
+                    <TextBlock  VerticalAlignment="Center" Text="Auto-Update Installer"></TextBlock>
+                    <ToggleSwitch IsChecked="True" Margin="10"></ToggleSwitch>
+                </StackPanel>
+                
+                <StackPanel Grid.Row="2" 
+                            Orientation="Vertical" 
+                            VerticalAlignment="Center" 
+                            HorizontalAlignment="Center">
+                    
+                    <StackPanel Orientation="Horizontal" 
+                                VerticalAlignment="Center" 
+                                HorizontalAlignment="Center">
+                    
+                        <StackPanel Grid.Row="1" Orientation="Horizontal" 
+                                    VerticalAlignment="Center" 
+                                    HorizontalAlignment="Center">
+                    
+                            <TextBlock  VerticalAlignment="Center" Text="Close After Completion"></TextBlock>
+                            <ToggleSwitch IsChecked="True" Margin="10"></ToggleSwitch>
+                        </StackPanel>
+                        
+                        <StackPanel Grid.Row="1" Orientation="Horizontal" 
+                                    VerticalAlignment="Center" 
+                                    HorizontalAlignment="Center">
+                    
+                            <TextBlock  VerticalAlignment="Center" Text="Highlight Log File Location"></TextBlock>
+                            <ToggleSwitch IsChecked="True" Margin="10"></ToggleSwitch>
+                        </StackPanel>
+                    </StackPanel>
+                    
+                    <StackPanel Orientation="Horizontal" 
+                                VerticalAlignment="Center" 
+                                HorizontalAlignment="Center">
+                    
+                        <StackPanel Grid.Row="1" Orientation="Horizontal" 
+                                    VerticalAlignment="Center" 
+                                    HorizontalAlignment="Center">
+                    
+                            <TextBlock  VerticalAlignment="Center" Text="Show ALPHA Pre-Releases"></TextBlock>
+                            <ToggleSwitch IsChecked="True" Margin="10"></ToggleSwitch>
+                        </StackPanel>
+                        
+                        <StackPanel Grid.Row="1" Orientation="Horizontal" 
+                                    VerticalAlignment="Center" 
+                                    HorizontalAlignment="Center">
+                    
+                            <TextBlock  VerticalAlignment="Center" Text="Remember Last Selected Game"></TextBlock>
+                            <ToggleSwitch IsChecked="True" Margin="10"></ToggleSwitch>
+                        </StackPanel>
+                    </StackPanel>
+                    
+                </StackPanel>
+            </Grid>
+        </Viewbox>
+</UserControl>

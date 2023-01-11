@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <LangVersion>latest</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <AvaloniaResource Include="Assets\**" />
+        <TrimmerRootDescriptor Include="Roots.xml" />
+        <None Remove="Assets\Discord.png" />
+        <AvaloniaResource Include="Assets\Discord.png" />
+        <None Remove="Assets\GitHub_Dark.png" />
+        <AvaloniaResource Include="Assets\GitHub_Dark.png" />
+        <None Remove="Assets\GitHub_Light.png" />
+        <AvaloniaResource Include="Assets\GitHub_Light.png" />
+        <None Remove="Assets\Twitter.png" />
+        <AvaloniaResource Include="Assets\Twitter.png" />
+        <None Remove="Assets\Wiki.png" />
+        <AvaloniaResource Include="Assets\Wiki.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Avalonia" Version="$(AvaloniaVersion)" />
+        <PackageReference Include="Avalonia.ThemeManager" Version="11.0.0-preview4" />
+        <PackageReference Include="Avalonia.Themes.Fluent" Version="$(AvaloniaVersion)" />
+        <PackageReference Include="Avalonia.ReactiveUI" Version="$(AvaloniaVersion)" />
+        <!--Condition below is needed to remove Avalonia.Diagnostics package from build output in Release configuration.-->
+        <PackageReference Condition="'$(Configuration)' == 'Debug'" Include="Avalonia.Diagnostics" Version="$(AvaloniaVersion)" />
+        <PackageReference Include="XamlNameReferenceGenerator" Version="1.5.1" />
+    </ItemGroup>
+</Project>

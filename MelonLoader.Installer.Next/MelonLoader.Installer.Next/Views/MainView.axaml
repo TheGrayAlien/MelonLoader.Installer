@@ -1,0 +1,124 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:viewModels="clr-namespace:MelonLoader.Installer.Next.ViewModels"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="MelonLoader.Installer.Next.Views.MainView">
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+         to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <viewModels:MainViewModel />
+    </Design.DataContext>
+
+    <Panel>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5" />
+                <RowDefinition Height="Auto" MaxHeight="80" />
+                <RowDefinition Height="Auto" MaxHeight="200" />
+                <RowDefinition Height="Auto" MaxHeight="300"/>
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Border Grid.Row="0" Background="{Binding Green}" />
+
+            <Viewbox Grid.Row="1" HorizontalAlignment="Left" Margin="10">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal" MaxHeight="40" Spacing="5">
+                        <Image Source="/Assets/Discord.png"
+                               RenderOptions.BitmapInterpolationMode="HighQuality"
+                               Cursor="Hand"
+                               HorizontalAlignment="Stretch"
+                               ToolTip.Tip="{Binding JoinDiscord}"
+                               PointerReleased="JoinDiscordClicked">
+                        </Image>
+
+                        <!-- Follow on Twitter -->
+                        <Image Source="/Assets/Twitter.png"
+                               RenderOptions.BitmapInterpolationMode="HighQuality"
+                               Cursor="Hand"
+                               HorizontalAlignment="Stretch"
+                               ToolTip.Tip="{Binding FollowTwitter}"
+                               PointerReleased="FollowTwitterClicked" />
+
+                        <!-- Open on GitHub -->
+                        <Image Name="GithubImage"
+                               Source="/Assets/GitHub_Dark.png"
+                               RenderOptions.BitmapInterpolationMode="HighQuality"
+                               Cursor="Hand"
+                               HorizontalAlignment="Stretch"
+                               ToolTip.Tip="{Binding CheckGithub}"
+                               PointerReleased="OpenGithubClicked" />
+
+                        <!-- Read the Wiki -->
+                        <Image Source="/Assets/Wiki.png"
+                               RenderOptions.BitmapInterpolationMode="HighQuality"
+                               Cursor="Hand"
+                               HorizontalAlignment="Stretch"
+                               ToolTip.Tip="{Binding CheckWiki}"
+                               PointerReleased="ReadWikiClicked" />
+                    </StackPanel>
+
+                    <TextBlock
+                        HorizontalAlignment="Center"
+                        Margin="0, 5, 0, 0"
+                        Opacity="0.5"
+                        Text="Installer v4.0.0" />
+                </StackPanel>
+            </Viewbox>
+
+            <Viewbox Grid.Row="2" 
+                     HorizontalAlignment="Center"
+                     Margin="50, 0, 50, 0">
+                <StackPanel>
+                    <Image
+                        Source="/Assets/ML_Icon.png"
+                        RenderOptions.BitmapInterpolationMode="HighQuality">
+                    </Image>
+
+                    <Image
+                        Source="/Assets/ML_Text.png"
+                        RenderOptions.BitmapInterpolationMode="HighQuality">
+                    </Image>
+                </StackPanel>
+            </Viewbox>
+
+            <Viewbox Grid.Row="3" 
+                     VerticalAlignment="Center"
+                     MaxWidth="1000"
+                     Margin="50, 0, 50, 0">
+                <StackPanel Orientation="Horizontal"
+                            Spacing="0">
+                    <Grid RowDefinitions="*,2">
+                        <Button
+                            Content="Automated"
+                            Background="Transparent"
+                            Click="HandleButton" />
+                        <Border Name="AutoInstallBorder" Grid.Row="1" Background="{Binding Red}" />
+                    </Grid>
+                    <Grid RowDefinitions="*,2">
+                        <Button
+                            Content="Manual Zip"
+                            Background="Transparent"
+                            Click="HandleButton" />
+                        <Border Name="ManualInstallBorder" Grid.Row="1" Background="Gray" />
+                    </Grid>
+                    <Grid RowDefinitions="*,2">
+                        <Button
+                            Content="Settings"
+                            Background="Transparent"
+                            Click="HandleButton" />
+                        <Border Name="SettingsBorder" Grid.Row="1" Background="Gray" />
+                    </Grid>
+                </StackPanel>
+            </Viewbox>
+
+            <UserControl Grid.Row="4"
+                         Name="PageContent"
+                         VerticalAlignment="Center"
+                         HorizontalAlignment="Center"
+                         Content="{Binding AutoInstallPage}" />
+        </Grid>
+    </Panel>
+</UserControl>

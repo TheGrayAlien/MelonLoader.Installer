@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="MelonLoader.Installer.Next/MelonLoader.Installer.Next/App.axaml" value="MelonLoader.Installer.Next/MelonLoader.Installer.Next.Desktop/MelonLoader.Installer.Next.Desktop.csproj" />
+        <entry key="MelonLoader.Installer.Next/MelonLoader.Installer.Next/Views/AutoInstallView.axaml" value="MelonLoader.Installer.Next/MelonLoader.Installer.Next.Desktop/MelonLoader.Installer.Next.Desktop.csproj" />
+        <entry key="MelonLoader.Installer.Next/MelonLoader.Installer.Next/Views/AutomatedInstall.axaml" value="MelonLoader.Installer.Next/MelonLoader.Installer.Next.Desktop/MelonLoader.Installer.Next.Desktop.csproj" />
+        <entry key="MelonLoader.Installer.Next/MelonLoader.Installer.Next/Views/MainView.axaml" value="MelonLoader.Installer.Next/MelonLoader.Installer.Next.Desktop/MelonLoader.Installer.Next.Desktop.csproj" />
+        <entry key="MelonLoader.Installer.Next/MelonLoader.Installer.Next/Views/MainWindow.axaml" value="MelonLoader.Installer.Next/MelonLoader.Installer.Next.Desktop/MelonLoader.Installer.Next.Desktop.csproj" />
+        <entry key="MelonLoader.Installer.Next/MelonLoader.Installer.Next/Views/ManualZip.axaml" value="MelonLoader.Installer.Next/MelonLoader.Installer.Next.Desktop/MelonLoader.Installer.Next.Desktop.csproj" />
+        <entry key="MelonLoader.Installer.Next/MelonLoader.Installer.Next/Views/ManualZipView.axaml" value="MelonLoader.Installer.Next/MelonLoader.Installer.Next.Desktop/MelonLoader.Installer.Next.Desktop.csproj" />
+        <entry key="MelonLoader.Installer.Next/MelonLoader.Installer.Next/Views/Settings.axaml" value="MelonLoader.Installer.Next/MelonLoader.Installer.Next.Desktop/MelonLoader.Installer.Next.Desktop.csproj" />
+        <entry key="MelonLoader.Installer.Next/MelonLoader.Installer.Next/Views/SettingsView.axaml" value="MelonLoader.Installer.Next/MelonLoader.Installer.Next.Desktop/MelonLoader.Installer.Next.Desktop.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

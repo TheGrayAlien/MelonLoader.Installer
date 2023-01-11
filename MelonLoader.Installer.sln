@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.32002.261
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MelonLoader.Installer", "MelonLoader.Installer.csproj", "{D30FE503-350F-43E1-AF13-6F7ADE0B42C0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MelonLoader.Installer.Next.Desktop", "MelonLoader.Installer.Next\MelonLoader.Installer.Next.Desktop\MelonLoader.Installer.Next.Desktop.csproj", "{01F7144D-3F5B-44AC-9CF0-5699FDCA6BBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MelonLoader.Installer.Next", "MelonLoader.Installer.Next\MelonLoader.Installer.Next\MelonLoader.Installer.Next.csproj", "{3C2FE460-DBE0-47C3-A1B5-2AA2CA1752C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{D30FE503-350F-43E1-AF13-6F7ADE0B42C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D30FE503-350F-43E1-AF13-6F7ADE0B42C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D30FE503-350F-43E1-AF13-6F7ADE0B42C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01F7144D-3F5B-44AC-9CF0-5699FDCA6BBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01F7144D-3F5B-44AC-9CF0-5699FDCA6BBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01F7144D-3F5B-44AC-9CF0-5699FDCA6BBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01F7144D-3F5B-44AC-9CF0-5699FDCA6BBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C2FE460-DBE0-47C3-A1B5-2AA2CA1752C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C2FE460-DBE0-47C3-A1B5-2AA2CA1752C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C2FE460-DBE0-47C3-A1B5-2AA2CA1752C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C2FE460-DBE0-47C3-A1B5-2AA2CA1752C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
